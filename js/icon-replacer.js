@@ -22,8 +22,11 @@ var icons = ["24-hour-service", "barking-dog", "bicycle-repair", "boycott",
       for (var i = 0; i < icons.length; i += 1) {
         var search_string = new RegExp(":"+icons[i]+":", "g")
         $(this).html($(this).html().replace(search_string,
-          '<object style="vertical-align:middle" width="'+size+'" height="'+size+'" data="' + icon_base + '/' + icons[i] + '.svg" type="image/svg+xml"></object>'));
+          '<object style="vertical-align:middle" class="iconreplacer-icon" width="'+size+'" height="'+size+'" data="' + icon_base + '/' + icons[i] + '.svg" type="image/svg+xml"></object>'));
       }
+
+      $(".iconreplacer-icon svg").removeAttr('height');
+      $(".iconreplacer-icon svg").removeAttr('width');
     });
 
     return this;
