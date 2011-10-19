@@ -63,23 +63,20 @@ td { vertical-align: top; }
 
 
 /* ==|== primary styles =====================================================
-   Author: 
+   Author: Chris Barna (chris@unbrain.net)
    ========================================================================== */
 
+#main {
+  margin-top:50px;
+}
 
+table .icon {
+  width:55px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+table .code {
+  font-family:Courier;
+}
 
 /* ==|== non-semantic helper classes ======================================== */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
