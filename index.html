@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title></title>
+  <title>Civic Icon Replacer</title>
   <meta name="author" content="Chris Barna (chris@unbrain.net)">
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -27,6 +27,10 @@
       <div class="topbar-inner">
         <div class="container">
           <a class="brand" href="#">Civic Icon Replacer</a>
+          <ul class="secondary-nav">
+            <li><a href="#the-icons">The Icons</a></li>
+            <li><a href="#try-it-out">Try It!</a></li>
+          </ul>
         </div>
       </div>
 
@@ -43,11 +47,22 @@
               America</a> (with the help of countless volunteer designers) have
             released an amazing set of civic centered icons. In the spirit of
             involvement, I have put together a quick jQuery plugin to allow
-            anybody to include these icons anywhere on their websites.
+            anybody to include these icons anywhere on their websites.</p>
           </div>
         </div>
 
-        <div class="page-header">
+        <div class="row">
+          <div class="span16">
+            <h4>Get the code</h4>
+            <ol>
+              <li>Copy and paste the following snippet below your jQuery include:
+              <code>&lt;script src="http://ctbarna.github.com/civic-icon-api/js/icon-replacer.js"&gt;&lt;/script&gt;</code></li>
+              <li>Enable it on any valid jQuery selector with: <code>$(selector).iconReplacer(size)</code> where size is how large you want the icons (defaults to 30px).
+            </ol>
+          </div>
+        </div>
+
+        <div class="page-header" id="the-icons">
           <h2>Here are the icons&hellip;</h2>
         </div>
         <div class="row">
@@ -246,9 +261,28 @@
           </div>
       </div>
 
+      <div class="page-header" id="try-it-out">
+        <h2>Try it out!</h2>
+      </div>
+
+      <div class="row">
+        <div class="span8">
+          <h4>Type here:</h4>
+          <textarea id="try-me">Try me...</textarea>
+        </div>
+        <div class="span8">
+          <h4>Look here:</h4>
+          <div id="try-me-update"></div>
+        </div>
+      </div>
+
     </div>
     <footer>
-
+      <div class="container">
+        <div class="row">
+          Made by <a href="http://twitter.com/ctbarna">Chris Barna</a>.
+        </div>
+      </div>
     </footer>
   </div> <!--! end of #container -->
 
@@ -264,11 +298,11 @@
   <!-- end scripts-->
 
 
-  <!-- <script> // Change UA-XXXXX-X to be your site's ID-->
-    <!-- window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];-->
-    <!-- Modernizr.load({-->
-      <!-- load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'-->
-    <!-- });-->
+  <script> // Change UA-XXXXX-X to be your site's ID
+    window._gaq = [['_setAccount','UA-21932623-2'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
   </script>
 
 

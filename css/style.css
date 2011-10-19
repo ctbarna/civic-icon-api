@@ -78,6 +78,28 @@ table .code {
   font-family:Courier;
 }
 
+textarea#try-me {
+  width:100%;
+  height:200px;
+}
+
+footer {
+  padding-bottom:15px;
+  background:#efefef;
+}
+
+.topbar a:visited {
+  color:#BFBFBF;
+}
+
+#try-me-update {
+  padding:5px;
+  border:1px solid #ddd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
 /* ==|== non-semantic helper classes ======================================== */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .ir br { display: none; }
