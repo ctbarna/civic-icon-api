@@ -1,0 +1,3 @@
+# Civic Icon Replacer
+Add civic icons to your websites easily! Read [the
+docs](http://ctbarna.github.com/civic-icon-api/) for more info.
