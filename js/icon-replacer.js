@@ -2,7 +2,7 @@
  * icon-replacer.js
  * @author Chris Barna (chris@unbrain.net)
  **/
-var base_url = "http://ctbarna.github.com/civic-icon-api/";
+var base_url = "";//"http://ctbarna.github.com/civic-icon-api/";
 var icon_base = base_url + "img/icons";
 
 var icons = ["24-hour-service", "barking-dog", "bicycle-repair", "boycott",
@@ -22,7 +22,7 @@ var icons = ["24-hour-service", "barking-dog", "bicycle-repair", "boycott",
       for (var i = 0; i < icons.length; i += 1) {
         var search_string = new RegExp(":"+icons[i]+":", "g")
         $(this).html($(this).html().replace(search_string,
-          '<object style="vertical-align:middle" width="'+size+'" height="'+size+'" data="' + icon_base + '/' + icons[i] + '.svg" type="image/svg+xml"></object>'));
+          '<object style="vertical-align:middle" style="overflow:hidden;" class="iconreplacer-icon" width="'+size+'" height="'+size+'" data="' + icon_base + '/' + icons[i] + '.svg" type="image/svg+xml"></object>'));
       }
     });
 
